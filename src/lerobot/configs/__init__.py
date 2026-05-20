@@ -34,8 +34,8 @@ from .types import (
 from .video import (
     VALID_VIDEO_CODECS,
     VIDEO_ENCODER_INFO_KEYS,
-    VideoEncoderConfig,
     DepthEncoderConfig,
+    VideoEncoderConfig,
     camera_encoder_defaults,
     depth_encoder_defaults,
 )
