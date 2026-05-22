@@ -11,11 +11,14 @@ and legacy marker variants) lives in ``test_dataset_metadata.py``.
 
 from pathlib import Path
 
-import av
 import numpy as np
 import PIL.Image
 import pytest
 import torch
+
+pytest.importorskip("av", reason="av is required (install lerobot[dataset])")
+
+import av
 
 from lerobot.configs import DepthEncoderConfig
 from lerobot.configs.video import DEPTH_QMAX, VALID_VIDEO_CODECS
